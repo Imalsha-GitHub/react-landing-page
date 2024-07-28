@@ -1,0 +1,81 @@
+/* FooterStyle.css */
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    padding: 0.5em;
+}
+
+
+.icon {
+    color: white;
+    margin-right: 1rem;
+}
+
+.line{
+    width: 30%;
+}
+
+hr{
+    /* two lines on bottom */
+    margin-bottom: 0.5em;
+}
+
+.copyright p{
+    text-align: center;
+    color: white;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5em;
+}
+
+/* media queries */
+@media screen and (max-width:1024px){
+    .line{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:568px){
+    hr{
+        display: none;
+    }
+}
+
+
+
+/* footer .icon {
+    color: white;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.line hr {
+    width: 40%;
+    border: 1px solid white;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    padding: 0.5rem 0;
+} */

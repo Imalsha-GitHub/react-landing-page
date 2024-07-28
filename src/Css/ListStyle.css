@@ -1,0 +1,94 @@
+/* ListStyle.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --mainColor: #6a7fdb;
+}
+
+header{
+    background-color: var(--mainColor);
+}
+
+.container{
+    width:95%;
+    /* background-color: orange; */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    height: 60px;
+    padding: .5em 0;
+}
+
+.list{
+    display: flex;
+}
+
+.listItem{
+    margin-left: 2em;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.activeItem{
+    color: black;
+    /* border-bottom: 0.1em double  black; */
+}
+
+
+
+
+/* media queries */
+@media screen and (max-width:1100px){
+    .icon{
+        margin-left: 1em;
+    }
+}
+
+@media screen and (max-width:768px){
+html{
+    font-size: 13px;
+}
+
+.container-flex{
+    flex-direction: column;
+}
+
+.logo{
+    width: 150px;
+}
+
+}
+
+@media screen and (max-width:568px){
+    html{
+        font-size: 11px;
+    }
+
+    .list{
+        flex-direction: column;
+    }
+
+    .listItem{
+        margin-top: 0.2em;
+    }
+    .logo{
+        width: 120px;
+    }
+    .icon{
+        margin: 1em 1.5em;
+    }
+    
+}

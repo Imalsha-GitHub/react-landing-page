@@ -1,0 +1,177 @@
+/* HomeAbout.css */
+
+.mainSection{
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contentBox{
+    width: 40%;
+    /* background-color: red; */
+    padding-left: 1em;
+}
+
+.imgContainer {
+    width: 40%; /* Set width of the container */
+    text-align: center; /* Center the image horizontally */
+}
+
+.imgContainer img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Optional: cover the entire container if image is too small */
+    border-radius: 10px; /* Optional: add rounded corners */
+    /* background-color: yellow; */
+}
+
+.contentBox h1{
+    font-size: 2.5rem;
+    color: #301934;
+    text-align: center;
+}
+
+.contentBox p{
+    font-size: 1.2rem;
+    margin: 1em 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btnBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    
+}
+
+.btn{
+    border: 2px solid transparent;
+    border-radius: 2em;
+    background-image: linear-gradient(45deg, #6A7FDB, #4A5FDB);
+
+    background-origin: border-box;
+    background-clip: content-box, border-box ;
+    
+}
+
+/* .readMore{
+    color: black;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: .5em 1.5em;
+} */
+
+
+.readMore {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+    background-image: linear-gradient(45deg, #6A7FDB, #4A5FDB);
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.readMore:hover {
+    background-image: linear-gradient(45deg, #f65c78, #ff6b6b);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .home-submit {
+        font-size: 1rem; /* Example: Adjust font size */
+        padding: 0.4em 1.2em; /* Example: Adjust padding */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .mainSection {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .contentBox h1 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contentBox p {
+        font-size: 1.1rem;
+        margin: 1em 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .imgContainer {
+        width: 80%;
+    }
+
+    .home-submit {
+        font-size: 0.9rem; /* Example: Adjust font size */
+        padding: 0.4em 1em; /* Example: Adjust padding */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .imgContainer {
+        width: 60%;
+    }
+
+    .home-submit {
+        font-size: 0.8rem; /* Example: Adjust font size */
+        padding: 0.3em 0.8em; /* Example: Adjust padding */
+    }
+}
+
+.input-field {
+    width: 200px; /* Set desired width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    text-align: left; /* Center text within input */
+    margin-left: 2em;
+    
+}
+
+.input-field:focus {
+    border-color: #6A7FDB; /* Adjust focus color */
+}
+
+.home-submit {
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.4em 1.2em;
+    border-radius: 1.5em;
+    background-image: linear-gradient(45deg, #6A7FDB, #4A5FDB);
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    margin-top: 1em; /* Adjust margin as needed */
+    margin-left: 1em;
+}
+
+.home-submit:hover {
+    background-image: linear-gradient(45deg, #f65c78, #ff6b6b);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
